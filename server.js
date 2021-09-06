@@ -10,7 +10,7 @@ app.use(express.json());
 const mongoose = require('mongoose');
 const port=process.env.PORT;
 
-mongoose.connect('mongodb://localhost:27017/book', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(`${process.env.mongo_link}`, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 
