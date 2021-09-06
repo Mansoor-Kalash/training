@@ -29,10 +29,11 @@ app.get('/listBook',showListBook);
 app.post('/addbook',addbook);
 app.get('/getFavDataForUser',getFavDataForUser);
 app.delete('/deletbook',deletebook);
-app.put('/updateData',ubdataDtata)
-app.get('/',test=(req,res)=>{
-res.send('all is good');
-});
+app.put('/updateData',ubdataDtata);
+app.get('/',test);
+function test (req,res){
+  res.send("all is good");
+}
 
 ///////
 async function showListBook (req,res){
